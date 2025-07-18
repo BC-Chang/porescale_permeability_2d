@@ -80,11 +80,11 @@ def collision(f, feq, tau, sx, sy, fx, fy):
 
     return f
 
-def run_lbm(data):
+def run_lbm(data, F=0.00001):
 
     # Initialization
     tau = 1.0  # Relaxation time
-    g = 0.00001  # Gravity or other force
+    g = F  # Gravity or other force
     density = 1.
     tf = 10001  # Maximum number of iteration steps
     precision = 1.E-5  # Convergence criterion
